@@ -1,0 +1,269 @@
+GET /game/white2 
+HTTP/1.1 304 Not 
+GET /game/black. 
+HTTP/1.1 304 Not 
+GET /7.9/Navigat 
+HTTP/1.1 200 OK 
+GET /config.ini 
+HTTP/1.1 304 Not 
+GET /vipservice_ 
+HTTP/1.1 200 OK 
+GET /querybt.fcg 
+HTTP/1.1 404 Not 
+GET /client8.log 
+HTTP/1.1 200 OK 
+GET /check_show_ 
+HTTP/1.1 200 OK 
+GET /smalloperat 
+HTTP/1.1 200 OK 
+GET /7.9/speadse 
+HTTP/1.1 304 Not 
+GET /thunder7/7. 
+HTTP/1.1 304 Not 
+GET /7.9/AutoSki 
+HTTP/1.1 304 Not 
+GET // HTTP/1.1 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+GET /ThunderPush 
+HTTP/1.1 304 Not 
+GET /?u=xmpcloud 
+HTTP/1.1 304 Not 
+GET /xmp_config/ 
+HTTP/1.1 304 Not 
+GET /7.9/tips/Se 
+HTTP/1.1 304 Not 
+GET /7.9/nav/Glo 
+HTTP/1.1 304 Not 
+GET /7.9/normal/ 
+HTTP/1.1 200 OK 
+GET /?u=kk_downl 
+HTTP/1.1 304 Not 
+GET /thundervip/ 
+HTTP/1.1 204 No 
+GET /activity/gu 
+HTTP/1.1 200 OK 
+GET /activity/gu 
+HTTP/1.1 200 OK 
+GET /UPV?gs=play 
+HTTP/1.1 200 OK 
+GET /UPV?gs=play 
+HTTP/1.1 200 OK 
+GET /r/coincente 
+HTTP/1.1 200 OK 
+GET /todaytasks. 
+HTTP/1.1 200 OK 
+GET /tasklua/201 
+HTTP/1.1 304 Not 
+GET /tasklua/201 
+HTTP/1.1 304 Not 
+GET /tasklua/201 
+HTTP/1.1 304 Not 
+GET /tasktips.cf 
+HTTP/1.1 200 OK 
+GET /tasklua/201 
+HTTP/1.1 304 Not 
+GET /7.9/normal/ 
+HTTP/1.1 304 Not 
+GET /xl7siderpkg 
+HTTP/1.1 404 Not 
+GET /gamebox/xgg 
+HTTP/1.1 200 OK 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /ad/thunder8 
+HTTP/1.1 304 Not 
+GET /rcfg/pcgame 
+HTTP/1.1 304 Not 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+GET /pkgame/xl7s 
+HTTP/1.1 200 OK 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /cdn.baidupc 
+HTTP/1.0 302 Mov 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /cdn.baidupc 
+HTTP/1.0 302 Mov 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /pushfile/A/ 
+HTTP/1.1 403 For 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /file.data.w 
+HTTP/1.1 403 For 
+GET /401.html HT 
+HTTP/1.1 401 Una 
+GET /file/a72533 
+HTTP/1.1 403 For 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /pushfile/2/ 
+HTTP/1.1 206 Par 
+GET /pushfile/2/ 
+HTTP/1.1 206 Par 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+GET /r/coincente 
+HTTP/1.1 200 OK 
+POST /download/c 
+HTTP/1.1 200 OK 
+GET /pop.php HTT 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+GET /?u=xmpcloud 
+HTTP/1.1 304 Not 
+GET /?u=pusherv2 
+HTTP/1.1 304 Not 
+GET /?u=pusherv2 
+HTTP/1.1 304 Not 
+GET /?u=pusherv2 
+HTTP/1.1 304 Not 
+GET /?u=pusherv2 
+HTTP/1.1 304 Not 
+POST / HTTP/1.1 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 200 OK 
+GET /rcfg/rbanne 
+HTTP/1.1 304 Not 
+GET /rcfg/rbanne 
+HTTP/1.1 304 Not 
+GET /rcfg/486/13 
+HTTP/1.1 304 Not 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /service/rep 
+HTTP/1.1 200 OK 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /?storeRule= 
+HTTP/1.1 400 Bad 
+GET /?storeRule= 
+HTTP/1.1 200 OK 
+GET /download/qu 
+HTTP/1.1 304 Not 
+GET /service/rep 
+HTTP/1.1 200 OK 
+GET /?storeRule= 
+HTTP/1.1 200 OK 

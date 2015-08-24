@@ -1,0 +1,100 @@
+421 Service not available, closing transmission channel%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <snqjp@aol.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <dxcxtjyvajvgbz@gmail.com>%0d%0aRSET%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <gaorlghccuia@kimo.com>%0d%0aRSET%0d%0a
+HELO 188.127.232.47%0d%0aMAIL FROM: <phodev@yahoo.com>%0d%0a
+HELO 188.127.232.47%0d%0aMAIL FROM: <ofpugrvvs@yahoogroups.com>%0d%0a
+HELO 210.128.29.86%0d%0aMAIL FROM: <gdugj@zoho.com>%0d%0aRCPT TO: <info@kosekikai.or.jp>%0d%0aQUIT%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <npuaujsa@yahoo.com>%0d%0a
+HELO 121.119.184.62%0d%0aMAIL FROM: <@yahoo.co.jp>%0d%0aRCPT TO: <miyamoto-n@linkworks.co.jp>%0d%0aDATA%0d%0aReceived: from 72.202.14.78 by 211.
+HELO 112.216.45.114%0d%0aMAIL FROM: <iudjtexqp@kimo.com>%0d%0aRSET%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <fsotpzysly@hotmail.com>%0d%0aRSET%0d%0a
+HELO 112.220.224.186%0d%0aMAIL FROM: <spzyletuz@yahoo.com>%0d%0a
+HELO 188.127.232.47%0d%0aMAIL FROM: <zifouoaphvo@ms31.hinet.net>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <sncjrtroaew@kimo.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <vmaafsjwnvt@yahoo.com.tw>%0d%0aQUIT%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <awopzc@hotmail.com>%0d%0aRSET%0d%0a
+HELO 188.127.232.47%0d%0aMAIL FROM: <ndwmqumtytpx@hotmail.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <oefvhqrpqorw@yahoo.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <nkxaxbdkmjcls@aol.com>%0d%0aQUIT%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <kmpkfshbxvsg@yahoo-inc.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <jwzgi@yahoogroups.com>%0d%0aRSET%0d%0a
+EHLO JUCZI-226FC2950%0d%0aMAIL FROM: <stormland2002@yahoo.com>%0d%0aRCPT TO: <stormland2002@yahoo.com>%0d%0a
+HELO 112.220.224.186%0d%0aMAIL FROM: <eicznqopux@aol.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <disdczje@yahoo.com.tw>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <rkzvxsciqdppnw@googlegroups.com>%0d%0aQUIT%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <gqprrwzzptd@kimo.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <yohizn@aol.com>%0d%0aRSET%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <ixdfm@googlegroups.com>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <zugynrusqced@yahoo.com.tw>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <nmzxcowpcghkw@yahoo-inc.com>%0d%0aRSET%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <eenjeehu@yahoogroups.com>%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <fgnhlud@yahoogroups.com>%0d%0a
+EHLO ingxr62%0d%0aRSET%0d%0aMAIL FROM:<ipfnu@202.121.32.140>%0d%0aRCPT TO:<a447435850@yahoo.com.cn>%0d%0aDATA%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <adufqipeb@hotmail.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <vqqidxfbxykftf@yahoogroups.com>%0d%0aQUIT%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <ukmhoduq@yahoo.com>%0d%0a
+HELO 210.59.228.93%0d%0aMAIL FROM: <dbyzhgxbvywio@hotmail.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <tlxpuzzagewd@kimo.com>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <uaepmlwv@yahoo-inc.com>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <qhdjejrtloskba@yahoogroups.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <yoptxynvkbxl@yahoogroups.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <ctliy@yahoo.com>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <xjerzlw@aol.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <qzzcmlyhenqn@yahoo-inc.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <cryhn@yahoo-inc.com>%0d%0a
+HELO 61.36.80.116%0d%0aMAIL FROM: <aawdozxc@yahoo.com>%0d%0a
+HELO 91.120.37.2%0d%0aMAIL FROM: <qifcowamdchoy@ms31.hinet.net>%0d%0aRSET%0d%0a
+HELO 112.220.224.186%0d%0aMAIL FROM: <rphegnv@yahoo.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <zwqli@gmail.com>%0d%0aRSET%0d%0a
+HELO 168.95.5.81%0d%0aMAIL FROM: <bzihqk@yahoogroups.com>%0d%0aQUIT%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <enofaubyhnglwe@yahoo-inc.com>%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <tkqtajgchddu@googlegroups.com>%0d%0aRSET%0d%0a
+HELO 219.117.221.171%0d%0aMAIL FROM: <dahohosxday@yahoo.com%0d>%0d%0aRCPT TO: <e-nakano@chu-bu.co.jp>%0d%0aQUIT%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <dwhwqtps@yahoogroups.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <lmzamza@gmail.com>%0d%0aRSET%0d%0a
+EHLO [218.195.146.203]%0d%0aMAIL FROM: <homogenizespbf@mail.ru> BODY=8BITMIME%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <phggnpbtmr@yahoo.com.tw>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <aldcdycwi@kimo.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <sgwoycubtvhf@googlegroups.com>%0d%0aRSET%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <lodbvjgnqegzl@yahoogroups.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <gcagxbbxorhbur@hotmail.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <dygim@aol.com>%0d%0aQUIT%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <jzzmfbj@googlegroups.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <mobxzpwcttx@aol.com>%0d%0aRSET%0d%0a
+220 IomartMail ESMTP SMTP%0d%0a250-mta2.iomartmail.com Hello [202.121.80.39], pleased to meet you%0d%0a250 ENHANCEDSTATUSCODES%0d%0a450 5.7.
+HELO 203.138.181.240%0d%0aMAIL FROM: <dowmoel_emi_tachibana_19715@docomo.ne.jp>%0d%0aRCPT TO: <yukio.gyoro490211@docomo.ne.jp>%0d%0aRCPT TO:
+HELO 72.54.29.254%0d%0aMAIL FROM: <nvdwtmevy@yahoo.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <zawblvpptpyzv@aol.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <krkuhddtssrfzi@yahoo.com>%0d%0aQUIT%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <dcpyim@aol.com>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <tptramqwhhrvwd@hotmail.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <tinkltthyvxq@yahoo.com>%0d%0a
+HELO 168.95.5.52%0d%0aMAIL FROM: <okibibr@ms21.hinet.net>%0d%0aQUIT%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <nstxgfunjp@yahoogroups.com>%0d%0a
+EHLO 218.195.146.170%0d%0aMAIL FROM:<456ak@bk.ru>%0d%0aRCPT TO:<egorov@vyzo.ru>%0d%0a
+HELO 173.248.132.6%0d%0aMAIL FROM: <taynhfe@yahoo.com.tw>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <haztxticsbn@aol.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <xdyyuzqbzjnlvv@yahoo.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <ppqwcapiyn@yahoogroups.com>%0d%0aRSET%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <waptrczdqfvjr@yahoo-inc.com>%0d%0a
+HELO 203.138.180.112%0d%0aMAIL FROM: <fmaco4sylowaoiR@yahoo.co.jp>%0d%0aRCPT TO: <hisashi0419@docomo.ne.jp>%0d%0aRCPT TO: <ttdr_kij9mno@doco
+HELO 199.212.21.158%0d%0aMAIL FROM: <xfefh@yahoo.com.tw>%0d%0aRSET%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <nzkxy@yahoo.com>%0d%0aRSET%0d%0a
+HELO 112.216.45.114%0d%0aMAIL FROM: <leubadkjh@yahoo.com.tw>%0d%0a
+HELO 188.165.241.93%0d%0aMAIL FROM: <mmwvpl@hotmail.com>%0d%0aRSET%0d%0aMAIL FROM: <loxmjbi@hotmail.com>%0d%0aRSET%0d%0aMAIL FROM: <nfutfuj@yahoo-in
+HELO 72.54.29.254%0d%0aMAIL FROM: <enkopfj@yahoo-inc.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <elegowbrpqod@hotmail.com>%0d%0a
+HELO 58.93.255.223%0d%0aMAIL FROM: <wtnojtwx@55mail.jp%0d>%0d%0aQUIT%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <dwefh@yahoogroups.com>%0d%0aRSET%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <lpzzrogkglfe@googlegroups.com>%0d%0aRSET%0d%0a
+HELO 8.6.95.76%0d%0aMAIL FROM: <tknwzy@yahoo-inc.com>%0d%0aRSET%0d%0a
+HELO 210.157.5.19%0d%0aMAIL FROM: <ag8lcjva@docomo.ne.jp>%0d%0a
+HELO 58.93.255.223%0d%0aMAIL FROM: <wzzyj@aol.com%0d>%0d%0aQUIT%0d%0a
+HELO 96.125.167.191%0d%0aMAIL FROM: <fcrwj@gmail.com>%0d%0aQUIT%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <xmlspozls@gmail.com>%0d%0aRSET%0d%0a
+HELO 162.39.174.39%0d%0aMAIL FROM: <mnrghddusik@yahoogroups.com>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <cmlyouxrsdku@gmail.com>%0d%0aRSET%0d%0a
+HELO 72.54.29.254%0d%0aMAIL FROM: <zdoxzmuoxcv@yahoo.com.tw>%0d%0a
+HELO 199.212.21.158%0d%0aMAIL FROM: <ashpmzkqcssqc@yahoogroups.com>%0d%0aQUIT%0d%0a
+EHLO [218.195.146.134]%0d%0aMAIL FROM: <outsourceqfc147@list.ru> BODY=8BITMIME%0d%0aRCPT TO:<molchanov@ooo2dom.ru>%0d%0aRCPT TO:<fabrika@ooo
