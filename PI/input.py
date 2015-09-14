@@ -13,8 +13,9 @@ Licensed under the LGPL
 from pcapy  import *
 from socket import *
 from sets   import *
+import string
 
-__all__ = ["Input", "Pcap", "ASCII" ]
+__all__ = ["Input", "Pcap", "ASCII", "DIGITAL" ]
 
 class Input:
 
@@ -151,7 +152,45 @@ class ASCII(Input):
             digitalSeq = []
             for c in line:
                 digitalSeq.append(ord(c))
-	    for ch in digitalSeq:
-	    	print "%d," % ch
+            self.sequences.append((lineno, digitalSeq))
+
+class DIGITAL(Input):
+
+    """Handle newline delimited ASCII input files"""
+
+    def __init__(self, filename):
+        Input.__init__(self, filename)
+
+        try:
+            fd = open(filename, "r")
+	    print ".........."
+        except:
+            raise IOError
+
+        lineno = 0
+
+        while 1:
+            lineno += 1
+            line = fd.readline()
+
+            if not line:
+                break
+
+            l = len(self.set)
+            self.set.add(line)
+
+            if len(self.set) == l:
+                continue
+
+            # Digitize sequence
+	    print line
+            digitalSeq = []
+	    for ch in line.split():
+	        print ch
+		if '\n' != ch:
+		     digitalSeq.append(string.atoi(ch))
+	     	     #print "%d," % ch
 	    print "\n"
+	    print "line size : %d" % len(line)
+	    print "digital size : %d" % len(digitalSeq)
             self.sequences.append((lineno, digitalSeq))

@@ -26,7 +26,7 @@ def main():
     # Parse command line options and do sanity checking on arguments
     #
     try:
-        (opts, args) = getopt.getopt(sys.argv[1:], "pagw:")
+        (opts, args) = getopt.getopt(sys.argv[1:], "dpagw:")
     except:
         usage()
 
@@ -35,6 +35,8 @@ def main():
             format = "pcap"
         elif o in ["-a"]:
             format = "ascii"
+        elif o in ["-d"]:
+            format = "digital"
         elif o in ["-w"]:
             weight = float(a)
         elif o in ["-g"]:
@@ -68,6 +70,12 @@ def main():
     elif format == "ascii":
         try:
             sequences = input.ASCII(file)
+        except:
+            print "FATAL: Error opening '%s'" % file
+            sys.exit(-1)
+    elif format == "digital":
+        try:
+            sequences = input.DIGITAL(file)
         except:
             print "FATAL: Error opening '%s'" % file
             sys.exit(-1)
@@ -134,11 +142,12 @@ def main():
         print ""
 
 def usage():
-    print "usage: %s [-gpa] [-w <weight>] <sequence file>" % \
+    print "usage: %s [-gpad] [-w <weight>] <sequence file>" % \
         sys.argv[0]
     print "       -g\toutput graphviz of phylogenetic trees"
     print "       -p\tpcap format"
     print "       -a\tascii format"
+    print "       -d\tdigital format"
     print "       -w\tdifference weight for clustering"
     sys.exit(-1)
 
