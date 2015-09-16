@@ -185,6 +185,10 @@ def NeedlemanWunsch(seq1, seq2, S, int g, int e):
     return (new_seq1, new_seq2, edits1, edits2, t_max, gaps)
 
 def SmithWaterman(seq1, seq2, S, int g, int e):
+	"""
+	There are three steps to Smith-Waterman algorithm: similarity scoring, summing, back-tracing.
+	A common Smith-Waterman configuration is a match score of 2, mismatch score of -1 and a gap penalty of -2 
+	"""
 
     cdef int M, N, i, j, t_max, i_max, j_max, dir
     cdef int v1, v2, v3, m, new_len, data, ni, nj
@@ -230,7 +234,7 @@ def SmithWaterman(seq1, seq2, S, int g, int e):
     for i from 1 <= i < M:
         for j from 1 <= j < N:
 
-            dir = 0
+            dir = 0  # means direction (left, upper, diagonal)
 
             v1 = matrix[(i - 1) * ncols + (j - 1)]
             v2 = matrix[i * ncols + (j - 1)]
@@ -243,9 +247,9 @@ def SmithWaterman(seq1, seq2, S, int g, int e):
             if v3 > 255 or (v1 & 0xffffff00) == False:
                 v3 = v3 >> 8
 
-            v1 = v1 + matrix[i * ncols + j]
-            v2 = v2 - 2
-            v3 = v3 - 2
+            v1 = v1 + matrix[i * ncols + j]  # diagonal cell
+            v2 = v2 - 2 # left cell 
+            v3 = v3 - 2 # upper cell
 
             if v1 > 0:
                 m = v1
