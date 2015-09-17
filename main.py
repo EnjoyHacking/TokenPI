@@ -21,12 +21,13 @@ def main():
     format = None
     weight = 1.0
     graph = False
+    token_filename = ""
 
     #
     # Parse command line options and do sanity checking on arguments
     #
     try:
-        (opts, args) = getopt.getopt(sys.argv[1:], "dpagw:")
+        (opts, args) = getopt.getopt(sys.argv[1:], "dpagw:t:")
     except:
         usage()
 
@@ -39,6 +40,8 @@ def main():
             format = "digital"
         elif o in ["-w"]:
             weight = float(a)
+        elif o in ["-t"]:
+            token_filename = a;
         elif o in ["-g"]:
             graph = True
         else:
@@ -137,7 +140,9 @@ def main():
     i = 1
     for seqs in alist:
         print "Output of cluster %d" % i
-        output.Ansi(seqs)
+        #output.Ansi(seqs)
+	print "name : %s" % token_filename
+        output.Signature(seqs,token_filename)
         i += 1
         print ""
 

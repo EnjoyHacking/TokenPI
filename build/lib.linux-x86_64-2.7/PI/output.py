@@ -27,13 +27,15 @@ class Ansi(Output):
     def __init__(self, sequences):
 
         # Color defaults for composition
-        self.gap = "\033[41;30m%s\033[0m"
+	self.gap = "\033[41;30m%s\033[0m"
         self.printable = "\033[42;30m%s\033[0m"
         self.space = "\033[43;30m%s\033[0m"
         self.binary = "\033[44;30m%s\033[0m"
         self.zero = "\033[45;30m%s\033[0m"
         self.bit = "\033[46;30m%s\033[0m"
         self.default = "\033[47;30m%s\033[0m"
+	self.ordinary_token = "\033[40;37m%s\033[0m"
+	self.position_specific_token = "\033[40;37m%s\033[0m"
 
         Output.__init__(self, sequences)
 
@@ -54,16 +56,20 @@ class Ansi(Output):
             for id, seq in self.sequences:
                 print "%04d" % id,
                 for byte in seq[start:end]:
-                    if byte == 256:
-                        print self.gap % "___",
+	    	    if byte > 257:
+		        print self.ordinary_token % "x%03x" % byte,
+		    elif byte < 0:
+			print self.position_specific_token % "x%03x" % byte,
+                    elif byte == 256:
+                        print self.gap % "____",
                     elif isspace(byte):
-                        print self.space % "   ",
+                        print self.space % "    ",
                     elif isprint(byte):
-                        print self.printable % "x%02x" % byte,
+                        print self.printable % "x%03x" % byte,
                     elif byte == 0:
-                        print self.zero % "x00",
+                        print self.zero % "x000",
                     else:
-                        print self.default % "x%02x" % byte,
+                        print self.default % "x%03x" % byte,
                 print ""
 
             # Calculate datatype consensus
@@ -95,16 +101,20 @@ class Ansi(Output):
             for id, seq in self.sequences:
                 print "%04d" % id,
                 for byte in seq[start:start + remainder]:
-                    if byte == 256:
-                        print self.gap % "___",
+		    if byte > 256:
+		        print self.ordinary_token % "x%03x" % byte,
+		    elif byte < 0:
+		        print self.position_specific_token % "x%03x" % byte,
+                    elif byte == 256:
+                        print self.gap % "____",
                     elif isspace(byte):
-                        print self.space % "   ",
+                        print self.space % "    ",
                     elif isprint(byte):
-                        print self.printable % "x%02x" % byte,
+                        print self.printable % "x%03x" % byte,
                     elif byte == 0:
-                        print self.zero % "x00",
+                        print self.zero % "x000",
                     else:
-                        print self.default % "x%02x" % byte,
+                        print self.default % "x%03x" % byte,
                 print ""
 
             print "DT  ",
@@ -142,7 +152,7 @@ class Ansi(Output):
             items.sort()
 
             m = 1
-            v = 257
+            v = 257  
             for j in items:
                 if j[1] > m:
                     m = j[1]
@@ -173,17 +183,17 @@ class Ansi(Output):
             print "CONS",
             for byte,type,rate in real[start:end]:
                 if byte == 256:
-                   print self.gap % "___",
+                   print self.gap % "____",
                 elif byte == 257:
-                    print self.default % "???",
+                    print self.default % "????",
                 elif isspace(byte):
-                    print self.space % "   ",
+                    print self.space % "    ",
                 elif isprint(byte):
-                    print self.printable % "x%02x" % byte,
+                    print self.printable % "x%03x" % byte,
                 elif byte == 0:
-                    print self.zero % "x00",
+                    print self.zero % "x000",
                 else:
-                    print self.default % "x%02x" % byte,
+                    print self.default % "x%03x" % byte,
             print ""
 
             print "DT  ",
@@ -193,7 +203,7 @@ class Ansi(Output):
 
             print "MT  ",
             for byte,type,rate in real[start:end]:
-                print "%03d" % (rate * 100),
+                print "%04d" % (rate * 100),
             print "\n"
 
             start += 18
@@ -205,15 +215,15 @@ class Ansi(Output):
                 if byte == 256:
                    print self.gap % "___",
                 elif byte == 257:
-                    print self.default % "???",
+                    print self.default % "????",
                 elif isspace(byte):
-                    print self.space % "   ",
+                    print self.space % "    ",
                 elif isprint(byte):
-                    print self.printable % "x%02x" % byte,
+                    print self.printable % "x%03x" % byte,
                 elif byte == 0:
-                    print self.zero % "x00",
+                    print self.zero % "x000",
                 else:
-                    print self.default % "x%02x" % byte,
+                    print self.default % "x%03x" % byte,
             print ""
 
             print "DT  ",
@@ -223,15 +233,25 @@ class Ansi(Output):
 
             print "MT  ",
             for byte,type,rate in real[start:end]:
-                print "%03d" % (rate * 100),
+                print "%04d" % (rate * 100),
             print ""
 
     def _dtConsensus(self, data):
         histogram = {}
 
         for byte in data:
-            if byte == 256:
-                try:
+	    if byte > 257:
+		try:
+		    histogram["O"] += 1
+		except:
+		    histogram["O"] = 1
+	    elif byte < 0:
+		try:
+		    histogram["P"] += 1
+		except:
+		    histogram["P"] = 1
+	    elif byte == 256:
+		try:
                     histogram["G"] += 1
                 except:
                     histogram["G"] = 1
@@ -266,7 +286,7 @@ class Ansi(Output):
                m = j[1]
                v = j[0]
 
-        return v * 3
+        return v * 4
 
     def _mutationRate(self, data):
 

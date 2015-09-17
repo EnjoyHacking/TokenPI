@@ -187,7 +187,22 @@ def NeedlemanWunsch(seq1, seq2, S, int g, int e):
 def SmithWaterman(seq1, seq2, S, int g, int e):
 	"""
 	There are three steps to Smith-Waterman algorithm: similarity scoring, summing, back-tracing.
-	A common Smith-Waterman configuration is a match score of 2, mismatch score of -1 and a gap penalty of -2 
+	In PI project, a common Smith-Waterman configuration is a match score of 2, mismatch score of -1 
+	and a gap penalty of -2.
+
+	To obtain the best alignment between two sequences, we need to maximize a similarity scoring model like the 
+	following formula.
+		S(X, Y) = S_match * k_match + S_mismatch * k_mismatch + S_indel * k_indel.
+
+	In LCS(Longest common subsequence) algorithm, we generally compute the global similarity between two strings
+	with parameters S_match = 1 and S_mismatch = S_indel = 0.
+
+	In JNCA2012 paper, the authors developed a token-based scoring scheme.
+		S_match = 1 + Token_bonus + Pos_bonus.	
+			1 : match
+			Token_bonus = 1 : a bonus for all tokens 
+			Pos_bonus = 1 : a additional bonus for those position-specific tokens
+		S_mismatch = S_indel = -1
 	"""
 
     cdef int M, N, i, j, t_max, i_max, j_max, dir
@@ -222,7 +237,15 @@ def SmithWaterman(seq1, seq2, S, int g, int e):
     for i from 1 <= i < M:
         for j from 1 <= j < N:
             if seq1[i - 1] == seq2[j - 1]:
-                matrix[i * ncols + j] = 2
+	    	Token_bonus = 0
+		Pos_bonus = 0
+	    	if seq1[i - 1] < 0:
+			Token_bonus = 1
+			Pos_bonus = 1
+		if seq1[i - 1] > 256:
+			Token_bouns = 1
+			Pos_bonus = 0
+                matrix[i * ncols + j] = 1 + Token_bonus + Pos_bonus
             else:
                 matrix[i * ncols + j] = -1
 

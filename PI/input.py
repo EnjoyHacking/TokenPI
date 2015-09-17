@@ -163,7 +163,6 @@ class DIGITAL(Input):
 
         try:
             fd = open(filename, "r")
-	    print ".........."
         except:
             raise IOError
 
@@ -186,7 +185,6 @@ class DIGITAL(Input):
 	    print line
             digitalSeq = []
 	    for ch in line.split():
-	        print ch
 		if '\n' != ch:
 		     digitalSeq.append(string.atoi(ch))
 	     	     #print "%d," % ch

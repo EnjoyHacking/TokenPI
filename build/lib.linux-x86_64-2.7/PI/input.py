@@ -13,8 +13,9 @@ Licensed under the LGPL
 from pcapy  import *
 from socket import *
 from sets   import *
+import string
 
-__all__ = ["Input", "Pcap", "ASCII" ]
+__all__ = ["Input", "Pcap", "ASCII", "DIGITAL" ]
 
 class Input:
 
@@ -151,9 +152,6 @@ class ASCII(Input):
             digitalSeq = []
             for c in line:
                 digitalSeq.append(ord(c))
-	    for ch in digitalSeq:
-	    	print "%d," % ch
-	    print "\n"
             self.sequences.append((lineno, digitalSeq))
 
 class DIGITAL(Input):
@@ -184,9 +182,13 @@ class DIGITAL(Input):
                 continue
 
             # Digitize sequence
+	    print line
             digitalSeq = []
-	    digitalSeq.split(' ', line)
-	    for ch in digitalSeq:
-	    	print "%d," % ch
+	    for ch in line.split():
+		if '\n' != ch:
+		     digitalSeq.append(string.atoi(ch))
+	     	     #print "%d," % ch
 	    print "\n"
+	    print "line size : %d" % len(line)
+	    print "digital size : %d" % len(digitalSeq)
             self.sequences.append((lineno, digitalSeq))

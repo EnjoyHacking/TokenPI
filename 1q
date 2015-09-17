@@ -10,7 +10,6 @@ Licensed under the LGPL
 """
 
 from curses.ascii import *
-from token import Token 
 
 class Output:
 
@@ -28,15 +27,16 @@ class Ansi(Output):
     def __init__(self, sequences):
 
         # Color defaults for composition
-	self.gap = "\033[41;30m%s\033[0m" #deepred
-        self.printable = "\033[42;30m%s\033[0m" #green
-        self.space = "\033[43;30m%s\033[0m" #yellow
-        self.binary = "\033[44;30m%s\033[0m" #blue
-        self.zero = "\033[45;30m%s\033[0m" #purple
-        self.bit = "\033[46;30m%s\033[0m" #deepgreen
-        self.default = "\033[47;30m%s\033[0m" #white
-	self.ordinary_token = "\033[40;37m%s\033[0m" #black
-	self.position_specific_token = "\033[40;33m%s\033[0m" #black
+        self.gap = "\033[41;30m%s\033[0m"
+        self.printable = "\033[42;30m%s\033[0m"
+        self.space = "\033[43;30m%s\033[0m"
+        self.binary = "\033[44;30m%s\033[0m"
+        self.zero = "\033[45;30m%s\033[0m"
+        self.bit = "\033[46;30m%s\033[0m"
+        self.default = "\033[47;30m%s\033[0m"
+
+		self.ordinary_token = "\033[48;30m%s\033[0m"
+		self.position_specific_token = "\033[49;30m%s\033[0m"
 
         Output.__init__(self, sequences)
 
@@ -57,20 +57,20 @@ class Ansi(Output):
             for id, seq in self.sequences:
                 print "%04d" % id,
                 for byte in seq[start:end]:
-	    	    if byte > 257:
-		        print self.ordinary_token % "x%03x" % byte,
-		    elif byte < 0:
-			print self.position_specific_token % "x%03x" % byte,
+		    		if byte > 257:
+						print self.ordinary_token % "x%02x" % byte
+					elif byte < 0:
+						print self.position_specific_token % "x%02x" % byte
                     elif byte == 256:
-                        print self.gap % "____",
+                        print self.gap % "___",
                     elif isspace(byte):
-                        print self.space % "    ",
+                        print self.space % "   ",
                     elif isprint(byte):
-                        print self.printable % "x%03x" % byte,
+                        print self.printable % "x%02x" % byte,
                     elif byte == 0:
-                        print self.zero % "x000",
+                        print self.zero % "x00",
                     else:
-                        print self.default % "x%03x" % byte,
+                        print self.default % "x%02x" % byte,
                 print ""
 
             # Calculate datatype consensus
@@ -91,7 +91,7 @@ class Ansi(Output):
                 for id, seq in self.sequences:
                     column.append(seq[j])
                 rate = self._mutationRate(column)
-                print "%04d" % (rate * 100),
+                print "%03d" % (rate * 100),
                 mtConsensus.append(rate)
             print "\n"
 
@@ -102,20 +102,20 @@ class Ansi(Output):
             for id, seq in self.sequences:
                 print "%04d" % id,
                 for byte in seq[start:start + remainder]:
-		    if byte > 256:
-		        print self.ordinary_token % "x%03x" % byte,
-		    elif byte < 0:
-		        print self.position_specific_token % "x%03x" % byte,
+		    		if byte > 256:
+						print self.ordinary_token % "x%02x" % byte
+					elif byte < 0:
+						print self.position_specific_token % "x%02x" % byte
                     elif byte == 256:
-                        print self.gap % "____",
+                        print self.gap % "___",
                     elif isspace(byte):
-                        print self.space % "    ",
+                        print self.space % "   ",
                     elif isprint(byte):
-                        print self.printable % "x%03x" % byte,
+                        print self.printable % "x%02x" % byte,
                     elif byte == 0:
-                        print self.zero % "x000",
+                        print self.zero % "x00",
                     else:
-                        print self.default % "x%03x" % byte,
+                        print self.default % "x%02x" % byte,
                 print ""
 
             print "DT  ",
@@ -135,7 +135,7 @@ class Ansi(Output):
                     column.append(seq[j])
                 rate = self._mutationRate(column)
                 mtConsensus.append(rate)
-                print "%04d" % (rate * 100),
+                print "%03d" % (rate * 100),
             print ""
 
         # Calculate consensus sequence
@@ -184,17 +184,17 @@ class Ansi(Output):
             print "CONS",
             for byte,type,rate in real[start:end]:
                 if byte == 256:
-                   print self.gap % "____",
+                   print self.gap % "___",
                 elif byte == 257:
-                    print self.default % "????",
+                    print self.default % "???",
                 elif isspace(byte):
-                    print self.space % "    ",
+                    print self.space % "   ",
                 elif isprint(byte):
-                    print self.printable % "x%03x" % byte,
+                    print self.printable % "x%02x" % byte,
                 elif byte == 0:
-                    print self.zero % "x000",
+                    print self.zero % "x00",
                 else:
-                    print self.default % "x%03x" % byte,
+                    print self.default % "x%02x" % byte,
             print ""
 
             print "DT  ",
@@ -204,7 +204,7 @@ class Ansi(Output):
 
             print "MT  ",
             for byte,type,rate in real[start:end]:
-                print "%04d" % (rate * 100),
+                print "%03d" % (rate * 100),
             print "\n"
 
             start += 18
@@ -216,15 +216,15 @@ class Ansi(Output):
                 if byte == 256:
                    print self.gap % "___",
                 elif byte == 257:
-                    print self.default % "????",
+                    print self.default % "???",
                 elif isspace(byte):
-                    print self.space % "    ",
+                    print self.space % "   ",
                 elif isprint(byte):
-                    print self.printable % "x%03x" % byte,
+                    print self.printable % "x%02x" % byte,
                 elif byte == 0:
-                    print self.zero % "x000",
+                    print self.zero % "x00",
                 else:
-                    print self.default % "x%03x" % byte,
+                    print self.default % "x%02x" % byte,
             print ""
 
             print "DT  ",
@@ -234,25 +234,25 @@ class Ansi(Output):
 
             print "MT  ",
             for byte,type,rate in real[start:end]:
-                print "%04d" % (rate * 100),
+                print "%03d" % (rate * 100),
             print ""
 
     def _dtConsensus(self, data):
         histogram = {}
 
         for byte in data:
-	    if byte > 257:
-		try:
-		    histogram["O"] += 1
-		except:
-		    histogram["O"] = 1
-	    elif byte < 0:
-		try:
-		    histogram["P"] += 1
-		except:
-		    histogram["P"] = 1
-	    elif byte == 256:
-		try:
+			if byte > 257:
+				try:
+					histogram["O"] += 1
+				except:
+					histogram["O"] = 1
+			elif byte < 0:
+				try:
+					histogram["P"] += 1
+				except:
+					histogram["P"] = 1
+			elif byte == 256:
+				try:
                     histogram["G"] += 1
                 except:
                     histogram["G"] = 1
@@ -287,7 +287,7 @@ class Ansi(Output):
                m = j[1]
                v = j[0]
 
-        return v * 4
+        return v * 3
 
     def _mutationRate(self, data):
 
@@ -308,47 +308,3 @@ class Ansi(Output):
             rate = len(items) * 1.0 / len(data) * 1.0
 
         return rate
-
-#add by syf
-class Signature(Ansi):
-
-	def __init__(self, sequences, filename):
-
-		self.token_dict = {}
-		
-		try:
-			fd = open(filename, "r")
-		except:
-			raise IOError
-
-		while 1:
-			line = fd.readline().strip('\n')
-			if not line:
-				break
-			fields = line.split(',')
-			print line
-			t =  Token(fields[0], int(fields[1]), fields[3])
-			if int(fields[1]) not in self.token_dict:
-				self.token_dict[int(fields[1])] = [t]
-			else:
-				self.token_dict[int(fields[1])].append(t)
-
-		Ansi.__init__(self, sequences)
-		self._sig()
-
-	def _sig(self):
-		print "-----Signature-----"
-		for byte in self.consensus:
-			if byte == 256:
-			   print self.gap % "____",
-			elif byte == 257:
-				print self.default % "????",
-			elif isspace(byte):
-				print self.space % "    ",
-			elif isprint(byte):
-				print self.printable % "x%03x" % byte,
-			elif byte == 0:
-				print self.zero % "x000",
-			else:
-				print self.default % "x%03x" % byte,
-		print ""
