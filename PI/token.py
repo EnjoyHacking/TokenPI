@@ -1,7 +1,8 @@
 class Token:
-	def __init__(self, token, encode, associateToken):
+	def __init__(self, token, encode, shortestLen, associateToken):
 		self.token = token
 		self.encode = encode
+		self.shortestLen = shortestLen
 		self.associateToken = associateToken
 	
 	def __str__(self):
@@ -18,6 +19,9 @@ class Token:
 
 	def getAssociateToken(self):
 		return self.associateToken
+	
+	def getShortestLen(self):
+		return self.shortestLen
 
 
 
@@ -36,7 +40,7 @@ if __name__ == "__main__":
 			break
 		fields = line.split(',')
 		print line
-		t =  Token(fields[0], int(fields[1]), fields[3])
+		t =  Token(fields[0], int(fields[1]), int(fields[2]), fields[3])
 		if int(fields[1]) not in token_dict:
 			token_dict[int(fields[1])] = [t]
 		else:

@@ -185,7 +185,7 @@ class DIGITAL(Input):
 	    print line
             digitalSeq = []
 	    for ch in line.split():
-		if '\n' != ch:
+		if '\n' != ch and int(ch) != -1:
 		     digitalSeq.append(string.atoi(ch))
 	     	     #print "%d," % ch
 	    print "\n"
